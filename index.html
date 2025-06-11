@@ -203,115 +203,371 @@
 
 <div class="gradient-divider"></div>
 <!--EXPERIMENTAL-->            
-    <!-- Device Details Section -->
-    <section id="devices-details" class="devices-details section">
-      <div class="section-title text-center mb-5">
-        <h2>Equipos Localizadores</h2>
-        <p>Ponemos a tu disposicion los Equipos que brindamos</p>
-      </div>
-      <div class="container">
+<!-- Sección con Tabs -->
+<section class="section py-5">
+  <div class="container">
 
-        <div class="row gy-4">
+    <!-- Tabs Header -->
+    <ul class="nav nav-tabs justify-content-center mb-4" id="equipmentTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="satelitales-tab" data-bs-toggle="tab" data-bs-target="#satelitales" type="button" role="tab">Equipos Satelitales</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="gprs-tab" data-bs-toggle="tab" data-bs-target="#gprs" type="button" role="tab">Equipos GPRS</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="cctv-tab" data-bs-toggle="tab" data-bs-target="#cctv" type="button" role="tab">Sistemas de Seguridad</button>
+      </li>
+    </ul>
 
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="device-list">
-              <a href="#" class="active" data-target="GV501LG">Localizador Plug and Play</a>
-              <a href="#" data-target="ST4315">Localizador Basico</a>
-              <a href="#" data-target="ST4215">Localizador Compacto e impermeable</a>
-              <a href="#" data-target="ST3340LC">Localizador intermedio</a>
-              <a href="#" data-target="GV300">Localizador Avanzado</a>
+    <!-- Tabs Content -->
+    <div class="tab-content" id="equipmentTabsContent">
+
+      <!-- TAB 1: Satelitales -->
+      <div class="tab-pane fade show active" id="satelitales" role="tabpanel" aria-labelledby="satelitales-tab">
+        <!-- Aquí va tu sección completa con 5 dispositivos -->
+        <section class="devices-details section">
+          <div class="section-title text-center mb-5">
+            <h2>Equipos Satelitales</h2>
+            <p>Soluciones de rastreo con tecnología satelital para máxima cobertura.</p>
+          </div>
+          <div class="container">
+
+            <div class="row gy-4">
+
+              <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="device-list">
+                  <a href="#" class="active" data-target="GV501LG">Localizador Plug and Play</a>
+                  <a href="#" data-target="ST4315">Localizador Basico</a>
+                  <a href="#" data-target="ST4215">Localizador Compacto e impermeable</a>
+                 <a href="#" data-target="ST3340LC">Localizador intermedio</a>
+                  <a href="#" data-target="GV300">Localizador Avanzado</a>
+                </div>
+
+                <h4>Características estándar de nuestros equipos GPS</h4>
+                <p>Sin importar el modelo, nuestros GPS brindan localización precisa en tiempo real, alertas por geocercas, monitoreo de conducción riesgosa, detección de movimiento no autorizado y respaldo de batería para que siempre estés conectado.</p>
+              </div>
+          
+          <!--GV501-->
+            <div class="col-lg-8">
+              <div class="device-content active" id="GV501LG">
+                <img src="assets/img/thumbnail/GV501LG.png" alt="" class="img-fluid services-img">
+                <h3>Instalacion rápida y sin complicaciones</h3>
+                <p>
+                  No requiere servicio de instalacion, no necesita herramientas. Solo conéctelo al puerto OBDII de su vehículo (como si fuera un escáner). Podra ver dónde esta su vehículo en todo momento, desde nuestra app movil o plataforma web.
+                </p>
+                <ul>
+                  <li><i class="bi bi-check-circle"></i> <span>Diseño pequeño y ligero.</span></li>
+                  <li><i class="bi bi-check-circle"></i> <span>Instalacion no invasiva: Se conecta en segundos al puerto OBDII</span></li>
+                  <li><i class="bi bi-check-circle"></i> <span>Conectividad Bluetooth y Wi-Fi.</span></li>
+                  <li><i class="bi bi-check-circle"></i> <span>Conectividad 3G.</span></li>
+                  <li><i class="bi bi-check-circle"></i> <span>Recoleccion de datos del motor: Accede a informacion básica del estado del vehículo.</span></li>
+                  <li><i class="bi bi-check-circle"></i> <span><strong>Instalación no intrusiva.</strong></span></li>
+                </ul>
+                <p>
+                  ¡Lleva el control total de tus vehículos en tiempo real! Su diseño compacto lo hace fácil de ocultar y resistente para todo tipo de vehículos. ¡Monitorea desde tu celular o computadora y gana tranquilidad hoy mismo!
+                </p>
+              </div>
+        
+          <!--ST4315 -->
+              <div class="device-content" id="ST4315">
+                <img src="assets/img/thumbnail/st4315.png" alt="" class="img-fluid services-img">
+                <h3>Seguridad esencial con inversión mínima.</h3>
+                <p>
+                  Ideal para quienes buscan una solución confiable y económica para rastreo y control de vehículo.
+                </p>
+                <ul>
+                  <li><i class="bi bi-check-circle"></i> <span>Diseño mediano y delgado.</span></li>
+                  <li><i class="bi bi-check-circle"></i> <span>Conectividad 4G LTE.</span></li>
+                  <li><i class="bi bi-check-circle"></i> <span>2 Entradas digitales para Detección de ignición y Botón de pánico.</span></li>
+                  <li><i class="bi bi-check-circle"></i> <span>2 Salidas digitales para Sistema de Bloqueo Remoto o Alarma.</span></li>
+                </ul>
+              </div>
+          <!--ST4215 -->
+              <div class="device-content" id="ST4215">
+                <img src="assets/img/thumbnail/st4215.webp" alt="" class="img-fluid services-img">
+                <h3>Pequeño, discreto y preparado para todo.</h3>
+                <p>
+                  Diseñado para motos o vehículos expuestos al clima. Compacto, resistente al agua y de fácil instalación.            </p>
+                <ul>
+                  <li><i class="bi bi-check-circle"></i> <span>Diseño pequeño y ligero.</span></li>
+                  <li><i class="bi bi-check-circle"></i> <span>Certificacion IP67.</span></li>
+                  <li><i class="bi bi-check-circle"></i> <span>Conectividad 4G LTE.</span></li>
+                  <li><i class="bi bi-check-circle"></i> <span>2 Entradas digitales para Detección de ignición y Botón de pánico.</span></li>
+                  <li><i class="bi bi-check-circle"></i> <span>2 Salidas digitales para Sistema de Bloqueo Remoto o Alarma.</span></li>
+                </ul>
+              </div>
+        
+            <!--ST3340-->
+              <div class="device-content" id="ST3340LC">
+                <img src="assets/img/thumbnail/st3340lc.jpg" alt="" class="img-fluid services-img">
+                <h3>Control total de tu flota en la palma de tu mano.</h3>
+                <p>
+                  Más entradas, compatibilidad con sensores y funciones avanzadas. Ideal para monitoreo de flotas con mayor control operativo.            </p>
+                <ul>
+                  <li><i class="bi bi-check-circle"></i> <span>Diseño mediano.</span></li>
+                  <li><i class="bi bi-check-circle"></i> <span>Conectividad 3G.</span></li>
+                  <li><i class="bi bi-check-circle"></i> <span>4 Entradas digitales para sensores On/Off.</span></li>
+                  <li><i class="bi bi-check-circle"></i> <span>2 Salidas digitales para Sistema de Bloqueo Remoto o Alarma.</span></li>
+                </ul>
+              </div>
+            <!--GV300-->
+              <div class="device-content" id="GV300">
+                <img src="assets/img/thumbnail/gv300w.jpg" alt="" class="img-fluid services-img">
+                <h3>La solución que lo ve todo, incluso en condiciones extremas</h3>
+                <p>
+                  Alta resistencia, múltiples sensores y máxima confiabilidad. Para flotas exigentes, logística y transporte pesado.            </p>
+                <ul>
+                  <li><i class="bi bi-check-circle"></i> <span>Diseño mediano y robusto.</span></li>
+                  <li><i class="bi bi-check-circle"></i> <span>Conectividad 3G.</span></li>
+                  <li><i class="bi bi-check-circle"></i> <span>4 Entradas digitales para sensores On/Off.</span></li>
+                  <li><i class="bi bi-check-circle"></i> <span>2 Salidas digitales para Sistema de Bloqueo Remoto o Alarma.</span></li>
+                  <li><i class="bi bi-check-circle"></i> <span>1 Entrada analógica .</span></li>
+                  <li><i class="bi bi-check-circle"></i> <span>Puerto Serial.</span></li>
+                  <li><i class="bi bi-check-circle"></i> <span>Interfaz para indentificacion de conductor (iButton).</span></li>
+                </ul>
+              </div>
+                    <!--Devices list End-->
+
             </div>
 
-            <h4>Características estándar de nuestros equipos GPS</h4>
-            <p>Sin importar el modelo, nuestros GPS brindan localización precisa en tiempo real, alertas por geocercas, monitoreo de conducción riesgosa, detección de movimiento no autorizado y respaldo de batería para que siempre estés conectado.</p>
+            </div>
           </div>
-          
-<!--GV501-->
-        <div class="col-lg-8">
-          <div class="device-content active" id="GV501LG">
-            <img src="assets/img/thumbnail/GV501LG.png" alt="" class="img-fluid services-img">
-            <h3>Instalacion rápida y sin complicaciones</h3>
-            <p>
-              No requiere servicio de instalacion, no necesita herramientas. Solo conéctelo al puerto OBDII de su vehículo (como si fuera un escáner). Podra ver dónde esta su vehículo en todo momento, desde nuestra app movil o plataforma web.
-            </p>
-            <ul>
-              <li><i class="bi bi-check-circle"></i> <span>Diseño pequeño y ligero.</span></li>
-              <li><i class="bi bi-check-circle"></i> <span>Instalacion no invasiva: Se conecta en segundos al puerto OBDII</span></li>
-              <li><i class="bi bi-check-circle"></i> <span>Conectividad Bluetooth y Wi-Fi.</span></li>
-              <li><i class="bi bi-check-circle"></i> <span>Conectividad 3G.</span></li>
-              <li><i class="bi bi-check-circle"></i> <span>Recoleccion de datos del motor: Accede a informacion básica del estado del vehículo.</span></li>
-              <li><i class="bi bi-check-circle"></i> <span><strong>Instalación no intrusiva.</strong></span></li>
-            </ul>
-            <p>
-              ¡Lleva el control total de tus vehículos en tiempo real! Su diseño compacto lo hace fácil de ocultar y resistente para todo tipo de vehículos. ¡Monitorea desde tu celular o computadora y gana tranquilidad hoy mismo!
-            </p>
-          </div>
-        
-<!--ST4315 -->
-          <div class="device-content" id="ST4315">
-            <img src="assets/img/thumbnail/st4315.png" alt="" class="img-fluid services-img">
-            <h3>Seguridad esencial con inversión mínima.</h3>
-            <p>
-              Ideal para quienes buscan una solución confiable y económica para rastreo y control de vehículo.
-            </p>
-            <ul>
-              <li><i class="bi bi-check-circle"></i> <span>Diseño mediano y delgado.</span></li>
-              <li><i class="bi bi-check-circle"></i> <span>Conectividad 4G LTE.</span></li>
-              <li><i class="bi bi-check-circle"></i> <span>2 Entradas digitales para Detección de ignición y Botón de pánico.</span></li>
-              <li><i class="bi bi-check-circle"></i> <span>2 Salidas digitales para Sistema de Bloqueo Remoto o Alarma.</span></li>
-            </ul>
-          </div>
-<!--ST4215 -->
-          <div class="device-content" id="ST4215">
-            <img src="assets/img/thumbnail/st4215.webp" alt="" class="img-fluid services-img">
-            <h3>Pequeño, discreto y preparado para todo.</h3>
-            <p>
-              Diseñado para motos o vehículos expuestos al clima. Compacto, resistente al agua y de fácil instalación.            </p>
-            <ul>
-              <li><i class="bi bi-check-circle"></i> <span>Diseño pequeño y ligero.</span></li>
-              <li><i class="bi bi-check-circle"></i> <span>Certificacion IP67.</span></li>
-              <li><i class="bi bi-check-circle"></i> <span>Conectividad 4G LTE.</span></li>
-              <li><i class="bi bi-check-circle"></i> <span>2 Entradas digitales para Detección de ignición y Botón de pánico.</span></li>
-              <li><i class="bi bi-check-circle"></i> <span>2 Salidas digitales para Sistema de Bloqueo Remoto o Alarma.</span></li>
-            </ul>
-          </div>
-        
-<!--ST3340-->
-          <div class="device-content" id="ST3340LC">
-            <img src="assets/img/thumbnail/st3340lc.jpg" alt="" class="img-fluid services-img">
-            <h3>Control total de tu flota en la palma de tu mano.</h3>
-            <p>
-              Más entradas, compatibilidad con sensores y funciones avanzadas. Ideal para monitoreo de flotas con mayor control operativo.            </p>
-            <ul>
-              <li><i class="bi bi-check-circle"></i> <span>Diseño mediano.</span></li>
-              <li><i class="bi bi-check-circle"></i> <span>Conectividad 3G.</span></li>
-              <li><i class="bi bi-check-circle"></i> <span>4 Entradas digitales para sensores On/Off.</span></li>
-              <li><i class="bi bi-check-circle"></i> <span>2 Salidas digitales para Sistema de Bloqueo Remoto o Alarma.</span></li>
-            </ul>
-          </div>
-<!--GV300-->
-          <div class="device-content" id="GV300">
-            <img src="assets/img/thumbnail/gv300w.jpg" alt="" class="img-fluid services-img">
-            <h3>La solución que lo ve todo, incluso en condiciones extremas</h3>
-            <p>
-              Alta resistencia, múltiples sensores y máxima confiabilidad. Para flotas exigentes, logística y transporte pesado.            </p>
-            <ul>
-              <li><i class="bi bi-check-circle"></i> <span>Diseño mediano y robusto.</span></li>
-              <li><i class="bi bi-check-circle"></i> <span>Conectividad 3G.</span></li>
-              <li><i class="bi bi-check-circle"></i> <span>4 Entradas digitales para sensores On/Off.</span></li>
-              <li><i class="bi bi-check-circle"></i> <span>2 Salidas digitales para Sistema de Bloqueo Remoto o Alarma.</span></li>
-              <li><i class="bi bi-check-circle"></i> <span>1 Entrada analógica .</span></li>
-              <li><i class="bi bi-check-circle"></i> <span>Puerto Serial.</span></li>
-              <li><i class="bi bi-check-circle"></i> <span>Interfaz para indentificacion de conductor (iButton).</span></li>
-            </ul>
-        </div>
-<!--Devices list-->
-
-        </div>
-
+        </section>
       </div>
 
-    </section><!-- /Service Details Section -->
+      <!-- TAB 2: GPRS -->
+      <div class="tab-pane fade" id="gprs" role="tabpanel" aria-labelledby="gprs-tab">
+        <section class="devices-details section">
+          <div class="section-title text-center mb-5">
+            <h2>Equipos GPRS</h2>
+            <p>Rastreo mediante redes móviles 3G y 4G para vehículos urbanos y rurales.</p>
+          </div>
+          <div class="container">
+
+            <div class="row gy-4">
+
+              <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="device-list">
+                  <a href="#" class="active" data-target="GPRS-GV501LG">Localizador Plug and Play</a>
+                  <a href="#" data-target="GPRS-ST4315">Localizador Basico</a>
+                  <a href="#" data-target="GPRS-ST4215">Localizador Compacto e impermeable</a>
+                 <a href="#" data-target="GPRS-ST3340LC">Localizador intermedio</a>
+                  <a href="#" data-target="GPRS-GV300">Localizador Avanzado</a>
+                </div>
+
+                <h4>Características estándar de nuestros equipos GPS</h4>
+                <p>Sin importar el modelo, nuestros GPS brindan localización precisa en tiempo real, alertas por geocercas, monitoreo de conducción riesgosa, detección de movimiento no autorizado y respaldo de batería para que siempre estés conectado.</p>
+              </div>
+          
+          <!--GV501-->
+            <div class="col-lg-8">
+              <div class="device-content active" id="GPRS-GV501LG">
+                <img src="assets/img/thumbnail/GV501LG.png" alt="" class="img-fluid services-img">
+                <h3>Instalacion rápida y sin complicaciones</h3>
+                <p>
+                  No requiere servicio de instalacion, no necesita herramientas. Solo conéctelo al puerto OBDII de su vehículo (como si fuera un escáner). Podra ver dónde esta su vehículo en todo momento, desde nuestra app movil o plataforma web.
+                </p>
+                <ul>
+                  <li><i class="bi bi-check-circle"></i> <span>Diseño pequeño y ligero.</span></li>
+                  <li><i class="bi bi-check-circle"></i> <span>Instalacion no invasiva: Se conecta en segundos al puerto OBDII</span></li>
+                  <li><i class="bi bi-check-circle"></i> <span>Conectividad Bluetooth y Wi-Fi.</span></li>
+                  <li><i class="bi bi-check-circle"></i> <span>Conectividad 3G.</span></li>
+                  <li><i class="bi bi-check-circle"></i> <span>Recoleccion de datos del motor: Accede a informacion básica del estado del vehículo.</span></li>
+                  <li><i class="bi bi-check-circle"></i> <span><strong>Instalación no intrusiva.</strong></span></li>
+                </ul>
+                <p>
+                  ¡Lleva el control total de tus vehículos en tiempo real! Su diseño compacto lo hace fácil de ocultar y resistente para todo tipo de vehículos. ¡Monitorea desde tu celular o computadora y gana tranquilidad hoy mismo!
+                </p>
+              </div>
+        
+          <!--ST4315 -->
+              <div class="device-content" id="GPRS-ST4315">
+                <img src="assets/img/thumbnail/st4315.png" alt="" class="img-fluid services-img">
+                <h3>Seguridad esencial con inversión mínima.</h3>
+                <p>
+                  Ideal para quienes buscan una solución confiable y económica para rastreo y control de vehículo.
+                </p>
+                <ul>
+                  <li><i class="bi bi-check-circle"></i> <span>Diseño mediano y delgado.</span></li>
+                  <li><i class="bi bi-check-circle"></i> <span>Conectividad 4G LTE.</span></li>
+                  <li><i class="bi bi-check-circle"></i> <span>2 Entradas digitales para Detección de ignición y Botón de pánico.</span></li>
+                  <li><i class="bi bi-check-circle"></i> <span>2 Salidas digitales para Sistema de Bloqueo Remoto o Alarma.</span></li>
+                </ul>
+              </div>
+          <!--ST4215 -->
+              <div class="device-content" id="GPRS-ST4215">
+                <img src="assets/img/thumbnail/st4215.webp" alt="" class="img-fluid services-img">
+                <h3>Pequeño, discreto y preparado para todo.</h3>
+                <p>
+                  Diseñado para motos o vehículos expuestos al clima. Compacto, resistente al agua y de fácil instalación.            </p>
+                <ul>
+                  <li><i class="bi bi-check-circle"></i> <span>Diseño pequeño y ligero.</span></li>
+                  <li><i class="bi bi-check-circle"></i> <span>Certificacion IP67.</span></li>
+                  <li><i class="bi bi-check-circle"></i> <span>Conectividad 4G LTE.</span></li>
+                  <li><i class="bi bi-check-circle"></i> <span>2 Entradas digitales para Detección de ignición y Botón de pánico.</span></li>
+                  <li><i class="bi bi-check-circle"></i> <span>2 Salidas digitales para Sistema de Bloqueo Remoto o Alarma.</span></li>
+                </ul>
+              </div>
+        
+            <!--ST3340-->
+              <div class="device-content" id="GPRS-ST3340LC">
+                <img src="assets/img/thumbnail/st3340lc.jpg" alt="" class="img-fluid services-img">
+                <h3>Control total de tu flota en la palma de tu mano.</h3>
+                <p>
+                  Más entradas, compatibilidad con sensores y funciones avanzadas. Ideal para monitoreo de flotas con mayor control operativo.            </p>
+                <ul>
+                  <li><i class="bi bi-check-circle"></i> <span>Diseño mediano.</span></li>
+                  <li><i class="bi bi-check-circle"></i> <span>Conectividad 3G.</span></li>
+                  <li><i class="bi bi-check-circle"></i> <span>4 Entradas digitales para sensores On/Off.</span></li>
+                  <li><i class="bi bi-check-circle"></i> <span>2 Salidas digitales para Sistema de Bloqueo Remoto o Alarma.</span></li>
+                </ul>
+              </div>
+            <!--GV300-->
+              <div class="device-content" id="GPRS-GV300">
+                <img src="assets/img/thumbnail/gv300w.jpg" alt="" class="img-fluid services-img">
+                <h3>La solución que lo ve todo, incluso en condiciones extremas</h3>
+                <p>
+                  Alta resistencia, múltiples sensores y máxima confiabilidad. Para flotas exigentes, logística y transporte pesado.            </p>
+                <ul>
+                  <li><i class="bi bi-check-circle"></i> <span>Diseño mediano y robusto.</span></li>
+                  <li><i class="bi bi-check-circle"></i> <span>Conectividad 3G.</span></li>
+                  <li><i class="bi bi-check-circle"></i> <span>4 Entradas digitales para sensores On/Off.</span></li>
+                  <li><i class="bi bi-check-circle"></i> <span>2 Salidas digitales para Sistema de Bloqueo Remoto o Alarma.</span></li>
+                  <li><i class="bi bi-check-circle"></i> <span>1 Entrada analógica .</span></li>
+                  <li><i class="bi bi-check-circle"></i> <span>Puerto Serial.</span></li>
+                  <li><i class="bi bi-check-circle"></i> <span>Interfaz para indentificacion de conductor (iButton).</span></li>
+                </ul>
+              </div>
+                    <!--Devices list End-->
+
+            </div>
+
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- TAB 3: CCTV y más -->
+      <div class="tab-pane fade" id="cctv" role="tabpanel" aria-labelledby="cctv-tab">
+        <section class="devices-details section">
+          <div class="section-title text-center mb-5">
+            <h2>Sistemas de Seguridad</h2>
+            <p>Complementa tu seguridad con soluciones integrales como cámaras, sensores y más.</p>
+          </div>
+          <div class="container">
+
+            <div class="row gy-4">
+
+              <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="device-list">
+                  <a href="#" class="active" data-target="CCTV-Hikvision">Sistemas de CCTV Fijo HIKVISION</a>
+                  <a href="#" data-target="CCTV-Dahua">Sistemas de CCTV Fijo DAHUA</a>
+                  <a href="#" data-target="MDVR">Sistema de Videovigilancia Movil</a>
+                 <a href="#" data-target="DashCam">Camara Vehicular</a>
+                  <a href="#" data-target="Cercos">Sistema Anti-intrusión Perimetral</a>
+                </div>
+
+                <h4>Características estándar de nuestros equipos GPS</h4>
+                <p>Sin importar el modelo, nuestros GPS brindan localización precisa en tiempo real, alertas por geocercas, monitoreo de conducción riesgosa, detección de movimiento no autorizado y respaldo de batería para que siempre estés conectado.</p>
+              </div>
+          
+          <!--GV501-->
+            <div class="col-lg-8">
+              <div class="device-content active" id="CCTV-Hikvision">
+                <img src="assets/img/thumbnail/hikvision.png" alt="" class="img-fluid services-img">
+                <h3>Protección constante con visión precisa 24/7</h3>
+                <p>
+                  <strong>Ideal para:</strong><br> Oficinas, residencias, almacenes, locales comerciales, estacionamientos y cualquier espacio que requiera vigilancia fija con grabación de evidencia.<br>
+                  <strong>Monitorea desde cualquier lugar:</strong><br>
+                  Conéctalas a tu red y visualiza en tiempo real desde tu smartphone, tablet o PC. Compatible con aplicaciones móviles oficiales de Dahua o Hikvision.
+                </p>
+                <ul>
+                  <li><i class="bi bi-check-circle"></i> <span>Resolución HD, Full HD o 4K, según modelo.</span></li>
+                  <li><i class="bi bi-check-circle"></i> <span>Visión nocturna por infrarrojos.</span></li>
+                  <li><i class="bi bi-check-circle"></i> <span>Detección de movimiento inteligente.</span></li>
+                  <li><i class="bi bi-check-circle"></i> <span>Instalación fija para monitoreo continuo.</span></li>
+                  <li><i class="bi bi-check-circle"></i> <span>Conectividad IP/Inalambrica o coaxial según configuración.</span></li>
+                </ul>
+              </div>
+        
+          <!--ST4315 -->
+              <div class="device-content" id="CCTV-Dahua">
+                <img src="assets/img/thumbnail/dahua.jpg" alt="" class="img-fluid services-img">
+                <h3>Protección constante con visión precisa 24/7</h3>
+                <p>
+                  <strong>Ideal para:</strong><br> Oficinas, residencias, almacenes, locales comerciales, estacionamientos y cualquier espacio que requiera vigilancia fija con grabación de evidencia.<br>
+                  <strong>Monitorea desde cualquier lugar:</strong><br>
+                  Conéctalas a tu red y visualiza en tiempo real desde tu smartphone, tablet o PC. Compatible con aplicaciones móviles oficiales de Dahua o Hikvision.
+                </p>
+                <ul>
+                  <li><i class="bi bi-check-circle"></i> <span>Resolución HD, Full HD o 4K, según modelo.</span></li>
+                  <li><i class="bi bi-check-circle"></i> <span>Visión nocturna por infrarrojos.</span></li>
+                  <li><i class="bi bi-check-circle"></i> <span>Detección de movimiento inteligente.</span></li>
+                  <li><i class="bi bi-check-circle"></i> <span>Instalación fija para monitoreo continuo.</span></li>
+                  <li><i class="bi bi-check-circle"></i> <span>Conectividad IP/Inalambrica o coaxial según configuración.</span></li>
+                </ul>
+              </div>
+          <!--ST4215 -->
+              <div class="device-content" id="MDVR">
+                <img src="assets/img/thumbnail/dvr.png" alt="" class="img-fluid services-img">
+                <h3>Vigilancia en movimiento para vehículos y flotas.</h3>
+                <p>
+                  Diseñado para grabar video en tiempo real desde múltiples cámaras instaladas en vehículos. Es la solución ideal para empresas de transporte, seguridad privada, logística y gobierno que necesitan un respaldo visual continuo y confiable durante el trayecto.</p>
+                <ul>
+                  <li><i class="bi bi-check-circle"></i> <span>Soporta hasta 4 cámaras analógicas o AHD.</span></li>
+                  <li><i class="bi bi-check-circle"></i> <span>Grabación local en disco duro.</span></li>
+                  <li><i class="bi bi-check-circle"></i> <span>Conectividad 4G para monitoreo remoto.</span></li>
+                  <li><i class="bi bi-check-circle"></i> <span>GPS integrado para registrar ubicación junto con video.</span></li>
+                  <li><i class="bi bi-check-circle"></i> <span>Detección de eventos (frenado brusco, aceleración, colisiones).</span></li>
+                  <li><i class="bi bi-check-circle"></i> <span>Resistente a vibraciones y voltajes variables de vehículo.</span></li>
+                </ul>
+              </div>
+        
+            <!--ST3340-->
+              <div class="device-content" id="DashCam">
+                <img src="assets/img/thumbnail/dashcam.png" alt="" class="img-fluid services-img">
+                <h3>Tecnología avanzada para una conducción más segura y responsable</h3>.
+                <p>
+                  Cámaras vehiculares que no solo graban, también previenen accidentes mediante sistemas de asistencia activa como ADAS (Advanced Driver Assistance System) y DSM (Driver Status Monitoring), diseñados para mejorar la seguridad en carretera y dentro del vehículo.</p>
+                <ul>
+                  <li><i class="bi bi-check-circle"></i> <span>Grabación dual: cámara frontal (camino) + cámara interior (cabina) mediante tarjeta SD.</span></li>
+                  <li><i class="bi bi-check-circle"></i> <span>Resolución Full HD o superior para imágenes claras día y noche.</span></li>
+                  <li><i class="bi bi-check-circle"></i> <span>ADAS:</strong> Alertas por cambio de carril, distancia peligrosa, colisión frontal. DSM:</strong> Detección de fatiga, uso del celular, distracción o somnolencia al volante.</span></li>
+                  <li><i class="bi bi-check-circle"></i> <span>GPS integrado y conectividad 4G para monitoreo remoto en tiempo real.</span></li>
+                  <li><i class="bi bi-check-circle"></i> <span>Instalacion no intrusiva.</span></li>
+                </ul>
+              </div>
+            <!--GV300-->
+              <div class="device-content" id="Cercos">
+                <img src="assets/img/thumbnail/KCESEG.png" alt="" class="img-fluid services-img">
+                <h3>Protección perimetral activa las 24 horas.</h3>
+                <p>
+                  <strong>Ideal para:</strong><br> Perímetros medianos o grandes que requieren vigilancia constante y disuasión visual y eléctrica. Compatible con sistemas de seguridad integral.<br>
+                  <strong>Protege lo importante, sin compromisos</strong><br>
+                  El Shocker Advance Pro 16000 convierte tu cerco eléctrico en una primera línea de defensa confiable, que actúa antes de que el intruso llegue a tu propiedad.
+                </p>
+                <ul>
+                  <li><i class="bi bi-check-circle"></i> <span>Descarga eléctrica no letal y configurable.</span></li>
+                  <li><i class="bi bi-check-circle"></i> <span>Control remoto por app y panel físico (según modelo el modulo puede venderse por separado).</span></li>
+                  <li><i class="bi bi-check-circle"></i> <span>Salida para sirena y estrobo disuasivo.</span></li>
+                  <li><i class="bi bi-check-circle"></i> <span>Alimentacion por red domestica y bateria de respaldo.</span></li>
+                  <li><i class="bi bi-check-circle"></i> <span>Sporta Alarma Anti-intrusión para puertas.</span></li>
+                </ul>
+              </div>
+                    <!--Devices list End-->
+
+            </div>
+
+            </div>
+          </div>
+        </section>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!--End Tabs Section-->
 <div class="gradient-divider"></div>
 <!---EXPERIMENTAL-->
     <!--Benefit Section-->
